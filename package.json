@@ -1,0 +1,47 @@
+{
+  "name": "ng2-trim-on-blur",
+  "version": "1.0.1",
+  "description": "angular2 trim on blur directive",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && ngc -p tsconfig.json",
+    "prepare": "npm run build",
+    "lint": "tslint --project tslint.json src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KingMario/angular2-trim-on-blur.git"
+  },
+  "keywords": [
+    "angular2",
+    "trim",
+    "directive",
+    "blur"
+  ],
+  "author": "KingMario <gcyyq@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KingMario/angular2-trim-on-blur/issues"
+  },
+  "homepage": "https://github.com/KingMario/angular2-trim-on-blur#readme",
+  "peerDependencies": {
+    "@angular/common": ">= 5.0.0",
+    "@angular/core": ">= 5.0.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "~1.7.4",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "codelyzer": "^4.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3",
+    "zone.js": "^0.8.19"
+  }
+}
