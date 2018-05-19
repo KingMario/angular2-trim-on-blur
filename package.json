@@ -1,11 +1,12 @@
 {
   "name": "ng2-trim-on-blur",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "angular2 trim on blur directive",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
+    "src",
     "LICENSE"
   ],
   "scripts": {
@@ -30,8 +31,8 @@
   },
   "homepage": "https://github.com/KingMario/angular2-trim-on-blur#readme",
   "peerDependencies": {
-    "@angular/common": ">= 5.0.0",
-    "@angular/core": ">= 5.0.0"
+    "@angular/common": ">= 4.0.0",
+    "@angular/core": ">= 4.0.0"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.4",
