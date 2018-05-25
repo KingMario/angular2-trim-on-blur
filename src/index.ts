@@ -10,7 +10,10 @@ export class TrimOnBlurDirective {
 
     if ('function' === typeof value.trim && value.trim() !== value) {
       el.value = value.trim();
-      el.dispatchEvent(new Event('input'));
+
+      const event = document.createEvent('Event');
+      event.initEvent('input', false, false);
+      el.dispatchEvent(event);
     }
 
   }
