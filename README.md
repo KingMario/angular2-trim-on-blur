@@ -8,13 +8,13 @@ The compiled package is tested with Angular 5 and 6. To use it in Angular 4, you
 
 ## Usage
 
-1. Install `ng2-trim-on-blur`.
+1.Install `ng2-trim-on-blur`.
 
   ```bash
     npm i -S ng2-trim-on-blur
   ```
 
-2. Import `TrimOnBlurModule` to your Angular module.
+2.Import `TrimOnBlurModule` to your Angular module.
 
   **Angular 4**
 ```typescript
@@ -40,10 +40,12 @@ import { TrimOnBlurModule } from 'ng2-trim-on-blur';
   ...
 ```
 
-3. Add the "trimOnBlur" attribute to an input element.
+3.Add the "trimOnBlur" attribute to an input element.
   ```html
      <input type="text" ... trimOnBlur>
   ```
+
+4.Want to trim the value on input? Try [ngx-trim-directive](https://www.npmjs.com/package/ngx-trim-directive).
 
 ---
 Good luck.
