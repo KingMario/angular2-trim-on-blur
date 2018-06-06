@@ -5,15 +5,20 @@ import { Directive, HostListener, NgModule } from '@angular/core';
 })
 export class TrimOnBlurDirective {
 
+  private dispatchEvent (el, eventType) {
+    const event = document.createEvent('Event');
+    event.initEvent(eventType, false, false);
+    el.dispatchEvent(event);
+  }
+
   @HostListener('blur', [ '$event.target', '$event.target.value' ])
   onBlur (el: any, value: string): void {
 
     if ('function' === typeof value.trim && value.trim() !== value) {
       el.value = value.trim();
 
-      const event = document.createEvent('Event');
-      event.initEvent('input', false, false);
-      el.dispatchEvent(event);
+      this.dispatchEvent(el, 'input');
+      this.dispatchEvent(el, 'blur'); // in case updateOn is set to blur
     }
 
   }

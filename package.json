@@ -1,6 +1,6 @@
 {
   "name": "ng2-trim-on-blur",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "angular2 trim on blur directive",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
